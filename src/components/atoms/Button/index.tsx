@@ -34,11 +34,11 @@ export default function Button(props: PropTypes) {
     <button
       onClick={onClick}
       type={type}
-      className={`border-2 py-1 2xl:px-4 md:px-2 lg:ml-2.5 ${className} relative
+      className={`border-2 py-1 2xl:px-4 md:px-2 ${className} relative
       disabled:text-grayText disabled:bg-lightGray disabled:border-none disabled:cursor-not-allowed
       ${
         variant === 'outlined'
-          ? `text-${color} border-${color} rounded-full`
+          ? `text-${color} border-${color} `
           : `text-white bg-${color} border-${color} rounded-md hover:shadow-md`
       }
       ${fullWidth && 'w-full'}

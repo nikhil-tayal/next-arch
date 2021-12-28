@@ -10,7 +10,8 @@ module.exports = {
         primary: '#27b67c',
         secondary: '#322d59',
         danger: '#e57373',
-        'lighter-text': '#666',
+        lighterText: '#666',
+        outlineGray: '#E0E0E0',
       },
     },
     textColor: (theme) => ({
