@@ -1,10 +1,10 @@
 import { useRouter } from 'next/router'
 import React from 'react'
-import { Button } from '../../atoms'
+// import { Button } from '../../atoms'
 import Card from '../../atoms/Card'
 import H1 from '../../atoms/H1'
 import Input from '../../atoms/Input'
-
+import { Button } from '@nikhil-tayal/ui-component-library'
 export default function Login() {
   const { push } = useRouter()
   const loginHandler = (event: React.FormEvent<HTMLElement>) => {
@@ -37,7 +37,7 @@ export default function Login() {
       </H1>
       <Input fullWidth wrapperClass={'my-2'} onChange={() => { }} value={''} labelText='User Name' />
       <Input fullWidth wrapperClass={'my-2'} onChange={() => { }} value={''} labelText='Password' />
-      <Button variant='outlined' color='secondary' className='my-4' onClick={loginHandler}>
+      <Button >
         Login
       </Button>
     </Card>

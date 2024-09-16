@@ -3,7 +3,7 @@ import React from 'react'
 import { Button } from '../../atoms'
 import { Footer, Header } from '../../molecules'
 
-export default function index() {
+export default function Index() {
   const { push } = useRouter()
   return (
     <div>
